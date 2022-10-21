@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Bienvenue sur le site de l'Université de Thiès</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../favicon/site.webmanifest">
+    <link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../CSS/index.css"
+    />
+    <script>alert (" L'affichage normal du site est disponible que sur ordinateur portable !")</script>
+    <script>alert (" De nouvelles versions sont encours de développement !")</script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <!--
+          <h2>
+            <span id="titre">l'humilité mon choix, </span
+            ><span id="titre">l'Excellence ma voie</span>
+          </h2>
+          -->
+          <a href="#"> <img src="../images/ut.png" alt="logo" width="190vw" height="95vh" /></a>
+          <h1>
+             <a href="#" style="text-decoration: none;  color:white;"> <span id="universite">Université</span> Iba Der Thiam de Thiès</a>
+          </h1>
+        </div>
+        <div class="onglets">
+          <div class="reseaux">
+            <div class="contact">
+              <p> <a href="#" style="text-decoration: none; color:white;"> Contact / Intranet</a></p>
+            </div>
+            <ul class="sociaux">
+              <li> <a href="#" style="text-decoration: none; color:white;" > facebook</a></li>
+              <li> <a href="#" style="text-decoration: none; color:white;" > twitter</a></li>
+              <li> <a href="#" style="text-decoration: none; color:white;" > linkdin</a></li>
+              <li> <a href="#" style="text-decoration: none; color:white;" > intagram</a></li>
+              <li> <a href="#" style="text-decoration: none; color:white;" > youtube</a></li>
+            </ul>
+          </div>
+          <div class="navigation">
+            <ul class="pages">
+              <li> <a href="#inscriptions" style="text-decoration: none; color:white;" > Inscriptions</a></li>
+              <li> <a href="#campus"style="text-decoration: none; color:white;"> Campus Social</a></li>
+              <li> <a href="#administration" style="text-decoration: none; color:white;" > Administration</a></li>
+              <li> <a href="#gestionDesCours" style="text-decoration: none; color:white;" > Cours</a></li>
+              <li> <a href="#gestionDesNotes" style="text-decoration: none; color:white;" > Notes</a></li>
+            </ul>
+            <div class="mode">
+              <p>mode</p>
+            </div>
+            <div class="research">
+              <p>Recherche</p>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="video">
+        <video src="../images/La Technologie - 4763.mp4" autoplay muted loop></video>
+        <div class="ecriture">
+          <h1>
+            <span id="bienvenue">Bienvenue à</span
+            ><span id="ut"> L'UIDT de Thiès</span>
+          </h1>
+          <p>Environnement stimulant pour jeunes talents.</p>
+        </div>
+        <div class="voirVideo">
+          <p> <a href="#" style="text-decoration: none; color:white;"> Voir la vidéo</a></p>
+        </div>
+        <div class="button">
+          <div class="button1">
+            <p> <a href="#" style="text-decoration: none; color:white;" >Plaquettes</a></p>
+          </div>
+          <div class="button2">
+            <p> <a href="#" style="text-decoration: none; color:white;" >Guide</a></p>
+          </div>
+        </div>
+      </section>
+      <section class="inscriptions" id="inscriptions">
+        <h1>Inscriptions</h1>
+        <p>
+          Après votre Inscrption vous pouvez retirer votre Carte Etudiant ainsi
+          que votre Certificat d'Inscription !
+        </p>
+        <div class="container">
+          <div class="container-onglets">
+            <div class="ongletsPrime active" id="form" data-anim="1">
+              Formulaire
+            </div>
+            <div class="ongletsPrime" id="carte" data-anim="2">Carte</div>
+            <div class="ongletsPrime" id="certificat" data-anim="3">
+              Certificat
+            </div>
+          </div>
+          <div class="contenu activeContenu" data-anim="1">
+            <h2>Formulaire d'Inscription</h2>
+            <form class="Infospersonnelles" method="get">
+              <h3><span id="informations"> Informa</span>tions personnelles</h3>
+              <div class="Infospersonnellesin">
+                <div class="infremplissage">
+                  <label for="prenom">Prénom</label>
+                  <input
+                    type="text"
+                    id="prenom"
+                    required
+                    placeholder="Eduard"
+                  />
+                </div>
+                <div class="infremplissage">
+                  <label for="nom">Nom</label>
+                  <input type="text" id="nom" required placeholder="Mendy" />
+                </div>
+                <div class="infremplissage">
+                  <label for="date">Dâte de naissance</label>
+                  <input type="date" id="date" required />
+                </div>
+              </div>
+              <div class="Infospersonnellesin">
+                <div class="infremplissage">
+                  <label for="lieu">Lieu de naissance</label>
+                  <input type="text" id="lieu" required placeholder="Dakar"/>
+                </div>
+                <div class="infremplissage">
+                  <label for="sexe">Sexe</label>
+                  <input
+                    type="text"
+                    id="sexe"
+                    required
+                    placeholder="masculin / féminin / non précisé"
+                  />
+                </div>
+                <div class="infremplissage">
+                  <label for="nin">NIN</label>
+                  <input
+                    type="int"
+                    id="nin"
+                    required
+                    placeholder="Numéro derrière la carte nationale"
+                  />
+                </div>
+              </div>
+              <div class="Infospersonnellesin">
+                <div class="infremplissage">
+                  <label for="mail">E-mail</label>
+                  <input
+                    type="text"
+                    id="mail"
+                    required
+                    placeholder="eduard@gmail.com"
+                  />
+                </div>
+                <div class="infremplissage">
+                  <label for="num">Téléphone</label>
+                  <input
+                    type="text"
+                    id="num"
+                    required
+                    placeholder="77 777 77 77"
+                  />
+                </div>
+                <div class="infremplissage">
+                  <label for="ine">INE</label>
+                  <input type="text" id="ine" required  placeholder="N99999999999"/>
+                </div>
+              </div>
+              <div class="Infospersonnellesin">
+                <div class="infremplissage">
+                  <label for="numdossier">Numéro Dossier</label>
+                  <input type="int" id="numdossier" required placeholder="99999999999" />
+                </div>
+                <div class="infremplissage">
+                  <label for="personne">Personne à contacter</label>
+                  <input
+                    type="text"
+                    id="personne"
+                    required
+                    placeholder="Nom du père / tuteur / mère"
+                  />
+                </div>
+                <div class="infremplissage">
+                  <label for="numpersonne">Numéro</label>
+                  <input
+                    type="int"
+                    id="numpersonne"
+                    required
+                    placeholder="77 777 77 77"
+                  />
+                </div>
+              </div>
+              <div class="Infospédagogiques">
+              <h3><span id="informationsp"> Informa</span>tions pédagogiques</h3>
+              <div class="Infospédagogiquesin">
+                <div class="infremplissagep">
+                  <label for="Etablissement">Etablissement</label>
+                  <input
+                    type="text"
+                    id="Etablissement"
+                    required
+                    placeholder="UFR / ECOLE / IUT"
+                  />
+                </div>
+                <div class="infremplissagep">
+                  <label for="Département">Département</label>
+                  <input
+                    type="text"
+                    id="Département"
+                    required
+                    placeholder="Informatique"
+                  />
+                </div>
+                <div class="infremplissagep">
+                  <label for="Filière">Filière</label>
+                  <input
+                    type="text"
+                    id="Filière"
+                    required
+                    placeholder="Informatique"
+                  />
+                </div>
+              </div>
+               <div class="Infospédagogiquesin">
+                <div class="infremplissagep">
+                  <label for="Niveau">Niveau</label>
+                  <input
+                    type="text"
+                    id="Niveau"
+                    required
+                    placeholder="licence 2"
+                  />
+                </div>
+                <div class="infremplissagep">
+                  <label for="Payement">Payement</label>
+                  <input
+                    type="text"
+                    id="Payement"
+                    required
+                    placeholder="Payement par : OM / Wave / Promobile"
+                  />
+                </div>
+                <div class="infremplissagep">
+                  <label for="Photo">Insérez votre photo</label>
+                  <input
+                    type="file"
+                    id="Photo"
+                    required
+                    class="photo"
+                  />
+                </div>
+              </div>
+            </div>
+            <input type="submit" value="S'inscrire" class="send">
+            </form>
+          </div>
+            <div class="contenu" data-anim="2">
+              <h2>Carte Etudiant</h2>
+              <div class="pcarte">
+                <p>
+                Votre Carte sera disponible bientôt !
+                </p>
+              </div>
+            </div>
+            <div class="contenu" data-anim="3">
+              <h2>Certificat d'Inscrption</h2>
+               <div class="pcertificat">
+                <p>
+                 Votre Certificat d'Inscrption sera disponible bientôt !
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="campus" id="campus">
+        <h1>Campus Social</h1>
+        <div class="cadre">
+          <div class="photos">
+            <img src="../images/iba.jpg" alt="">
+            <img src="../images/menu (1).jpg" alt="">
+            <img src="../images/dame.jpg" alt="">
+             <img src="../images/sam-fall.jpg" alt="">
+          </div>
+          <div class="informationscampus">
+            <h2 class="hb">Hébergement</h2>
+            <div class="paragraphe">
+              <p>Les étudiants sont logés dans des résidences universitaires répartis sur plusieurs sites notammment <span id="site">site VCN</span> , <span id="site">site Hôtel du rail</span> , parmi tant d'autres.</p>
+              <p>Le <span id="site">site VCN</span> comporte (2) deux pavillons : pavillon A et pavillon B ;</p>
+              <p>Ces pavillons sont disposés de façon distincte  qu'il y a celui des filles et des garçons .</p>
+              <p>Le <span id="site">site Hôtel du rail</span> comporte plusieurs pavillons.</p>
+              <p>Pour accompagner la montée en puissance de L’UID2T, de nouveaux pavillons sont en phase de construction.</p>
+              <p>Les chambres sont attribuées dans la limite des places disponibles ! <a href="#" id="hebergementjs" style="color:red;"> En savoir plus...</a></p>
+            </div>
+              <h2 class="res">Restauration</h2>
+              <div class="paragraphes">
+                <p>Le CROUS dispose plusieurs restaurants modernes dont
+                  celui du site VCN , de l'hôtel du rail , ... avec un service de repas subventionnés.</p>
+                <p>Le CROUS offre des tarifs préférentiels à l’étudiant aux     horaires suivants:</p>
+                <div class="jours">
+                  <p>Petit déjeuner 50f :&nbsp&nbsp&nbsp&nbsp08h – 10h 00</p>
+                  <p>Déjeuner 100f :&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp12h – 14h 00</p>
+                  <p>Dîner 100f :&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp19h – 21h 00</p>
+                </div>
+                <p> <span style="color: orange;text-decoration: underline;text-decoration-color: rgb(44, 140, 179);">NB</span>: Les horaires peuvent faire l’objet de réamnagement en raison de plusieurs facteurs(rupture,journée sans tickets, ....).</p>
+                <p>Le CROUS se charge de la confection, de la vente des tickets subventionnés, la supervision</p>
+                <p>Contrôleur de qualité des repas servis aux étudiants est commis par le CROUS, pour garantir le respect des normes d’hygiène et de qualité en vigueur. <a href="#" id="restaurantjs" style="color:orange;"> En savoir plus...</a>
+
+ </p>
+              </div>
+               <h2 class="sp">Animation Sportif et Culturel</h2>
+               <div class="para">
+                <p>Le CROUS a très tôt choisi de créer des espaces d’épanouissement pour l’étudiant.</p>
+                <p>Le campus est en permanence animé. De grands <span style="color: blue;"> musiciens sénégalais</span> y ont tenu des concerts.</p>
+                <p>C’est un milieu d’animation artistique et sportive. <a href="#" class="informationsjs" style="color: blue; text-decoration: underline;">En savoir plus...</a></p>
+                <p>Le Campus dispose d’une grande salle de spectacle et équipée en matériels sono, audio, vidéo, et ludiques</p>
+                <p>En se dotant de ressources humaines de qualité et de structures institutionnelles fiables, le CROUS a cherché à favoriser des rapports d’entente et de fraternité. C’est ainsi qu’il a facilité la naissance de nombreuses amicales et associations.</p>
+               </div>
+               <h2 class="ac">Activités religieuses</h2>
+               <div class="paras">
+                <p>Les disciples étudiants des différentes religions et des différentes confréries peuvent pratiquer leurs activités religieuses avec toute aisance et fraternité.</p>
+                <p>Ainsi les Campus sont souvent animés d'événements religieux tels que <span style="color: green;">Tafsir Quran Gamou Magal Chorale <a href="#" class="informationsjs" style="color:green;"> En savoir plus...</a></span></p>
+               </div>
+          </div>
+          <div class="images">
+            <img src="../images/café.jpg" alt="">
+             <img src="../images/croust.jpg" alt="">
+            <img src="../images/ambiance3.jpg" alt="">
+             <img src="../images/tafsir.jpg" alt="" height="328vh">
+          </div>
+        </div>
+      </section>
+      <section class="administration" id="administration">
+        <h1>Administration</h1>
+        <div class="administrations">
+          <div class="ecritureadministration">
+            <div class="texteacote"> <h2 style="width: 40vw;"> <span>Envoyez - nous</span> votre demande</h2></div>
+            <form method="get" class="ad">
+              <div class="adin">
+               <div class="adremplissage">
+                  <label for="Prenom">Prénom</label>
+                  <input
+                    type="text"
+                    id="Prenom"
+                    required
+                    placeholder="Alioune"
+                  />
+                </div>
+                <div class="adremplissage">
+                  <label for="Nom">Nom</label>
+                  <input
+                    type="text"
+                    id="Nom"
+                    required
+                    placeholder="Gueye"
+                  />
+                </div>
+              </div>
+              <div class="adin">
+               <div class="adremplissage">
+                  <label for="Mail">E-mail</label>
+                  <input
+                    type="email"
+                    id="Mail"
+                    required
+                    placeholder="alioune@gmail.com"
+                  />
+                </div>
+                <div class="adremplissage">
+                  <label for="phone">Téléphone</label>
+                  <input
+                    type="int"
+                    id="phone"
+                    required
+                    placeholder="77 777 77 77"
+                  />
+                </div>
+              </div>
+              <div class="adin">
+               <div class="adremplissage">
+                  <label for="Num">Numéro Dossier</label>
+                  <input
+                    type="int"
+                    id="Num"
+                    required
+                    placeholder="9999999999"
+                  />
+                </div>
+                <div class="adremplissage">
+                  <label for="etablissement">Etablissement</label>
+                  <input
+                    type="text"
+                    id="etablissement"
+                    required
+                    placeholder="UFR-SET"
+                  />
+                </div>
+              </div>
+              <div class="adin">
+               <div class="adremplissage">
+                  <label for="departement">Département</label>
+                  <input
+                    type="text"
+                    id="departement"
+                    required
+                    placeholder="Informatique"
+                  />
+                </div>
+                <div class="adremplissage">
+                  <label for="filière">Filière</label>
+                  <input
+                    type="text"
+                    id="filière"
+                    required
+                    placeholder="Informatique"
+                  />
+                </div>
+              </div>
+              <div class="adin">
+               <div class="adremplissage">
+                  <label for="niveau">Niveau</label>
+                  <input
+                    type="text"
+                    id="niveau"
+                    required
+                    placeholder="licence 2"
+                  />
+                </div>
+                <div class="adremplissage">
+                   <label for="Objet">Objet</label>
+                    <input
+                      type="text"
+                      id="Objet"
+                      placeholder="Demande de relevé"
+                      required
+                    />
+                </div>
+              </div>
+              <div class="demandetexte">
+                 <label for="demandetextein"></label>
+                <textarea id="demandetextein" cols="60" rows="10" placeholder="Votre message ! "></textarea>
+              </div>
+              <input type="submit" value="Envoyer" class="Envoyer">
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="gestionDesCours" id="gestionDesCours">
+        <h1>Gestion des Cours</h1>
+        <div class="gestion">
+          <div class="licencemaster">
+            <div class="licence">
+              <h2> <span style="border-bottom : 4px solid red;">Lice</span>nces</h2>
+              <ul>
+               <li class="emploi" > <a href="#"> Informatique</a></li>
+               <li class="emploi" > <a href="#"> Management informatisé des organisations</a> </li>
+               <li class="emploi" > <a href="#"> Management du Tourisme et de l'Hotellerie</a></a></li>
+               <li class="emploi" > <a href="#"> Sciences Economiques et de Gestion</a></li>
+               <li class="emploi" > <a href="#"> Langues Etrangères Appliquées</li>
+               <li class="emploi" > <a href="#"> Orthophonie</a></li>
+               <li class="emploi" > <a href="#"> Orthoptie</a></li>
+               <li class="emploi" > <a href="#"> Sciences infirmières et obstétricales</a></li>
+               <li class="emploi" > <a href="#"> Géomatique</a></li>
+               <li class="emploi" > <a href="#"> Qualité, Hygiène,Sécurité et Environnement</a></li>
+               <li class="emploi" > <a href="#"> Mathématiques-Informatique</a></li>
+               <li class="emploi" > <a href="#"> Physique et Chimie</a></li>
+               <li class="emploi" > <a href="#"> Sciences de l'Eau et l'Environnement</a></li>
+               <li class="emploi" > <a href="#"> Mathématiques</a></li>
+               <li class="emploi" > <a href="#"> Systèmes Informatiques et Logiciels</a></li>
+               <li class="emploi" > <a href="#"> Lettres, Art et Civilisation (LAC)</a></li>
+              </ul>
+            </div>
+             <div class="master">
+                 <h2> <span style="border-bottom : 4px solid orange;">Mas</span>ters</h2>
+              <ul>
+                <li class="emploi" > <a href="#">Informatique</a></li>
+                <li class="emploi" > <a href="#"> Sciences des Données et application </a> </li>
+                <li class="emploi" > <a href="#"> Gestion Touristique et Hotelière</a></li>
+                <li class="emploi" > <a href="#"> Audit et Controle</a></li>
+                <li class="emploi" > <a href="#"> Sciences et Technologies des Semences</a></li>
+                <li class="emploi" > <a href="#">Agronomie et Protection des Cultures</a> </li>
+                <li class="emploi" > <a href="#"> Développement de Chaîne de valeur et Entrepreneuriat agricole et alimentaire</a></li>
+                <li class="emploi" > <a href="#">Foresterie</a> </li>
+                <li class="emploi" > <a href="#"> Mathématiques et Applications</a></li>
+                <li class="emploi" > <a href="#">Banque Finance & Assurance</a> </li>
+                <li class="emploi" > <a href="#"> IngénierieIngénierie Hydraulique et Assainissement</a></li>
+                <li class="emploi" > <a href="#"> Mathématiques pour l’Enseignement</a></li>
+                <li class="emploi" > <a href="#"> Ingénierie et Gestion de l’Environnement</a></li>
+                <li class="emploi" > <a href="#"> Sciences des données et applications</a></li>
+                <li class="emploi" > <a href="#"> Mécanique des Sols, Géotechnique et Modélisation des terrains</a></li>
+                <li class="emploi" > <a href="#"> Architecture</a></li>
+                <li class="emploi" > <a href="#"> Géomatique</a></li>
+                <li class="emploi" > <a href="#"> Sciences biologiques et exploration fonctionnelle</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="dutdoctorat">
+            <div class="doctorat">
+                 <h2> <span style="border-bottom : 4px solid blue;">Doct</span>orats</h2>
+                 <ul>
+                  <li class="emploi" > <a href="#"> Mention Sciences et Technologies</a></li>
+                  <li class="emploi" > <a href="#"> Mention Sciences de la Santé</a></li>
+                  <li class="emploi" > <a href="#"> Mention Sciences Agronomiques</a></li>
+                  <li class="emploi" > <a href="#"> Mention Sciences Economiques et Sociales</a></li>
+                 </ul>
+            </div>
+             <div class="dut">
+                 <h2><span style="border-bottom : 4px solid green;">Cyles </span>de DUT</h2>
+              <ul>
+                <li class="emploi" > <a href="#"> DUT Géomètre Topographe (GT)</a></li>
+                <li class="emploi" > <a href="#"> DUT Génie Civil BTP (GC)</a></li>
+                <li class="emploi" > <a href="#"> DUT Génie électrique et Informatique industrielle (GEII)</a></li>
+                <li class="emploi" > <a href="#"> DUT Gestion Logistique et Transport (GLT)</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="imagesDomaine">
+        </div>
+      </section>
+      <section class="gestionDesNotes" id="gestionDesNotes">
+        <h1>Gestion des Notes</h1>
+        <div class="enveloppe">
+          <p>A travers notre Base de Données vous pouvez voir vos Notes, effectuer des réclamations,...</p>
+          <form class="bgroundform">
+            <div class="deux">
+              <div class="labelInput">
+                <label for="prenomEtudiant">Prénom</label>
+                <input type="text" id="prenomEtudiant" required>
+              </div>
+              <div class="labelInput">
+                <label for="nomEtudiant">Nom</label>
+                <input type="text" id="nomEtudiant" required>
+              </div>
+            </div> 
+             <div class="deux">
+              <div class="labelInput">
+                <label for="emailEtudiant">E-mail</label>
+                <input type="mail" id="emailEtudiant" required>
+              </div>
+              <div class="labelInput">
+                <label for="dossierEtudiant">N° Dossier</label>
+                <input type="int" id="dossierEtudiant" required>
+              </div>
+            </div> 
+             <div class="deux">
+              <div class="labelInput">
+                <label for="filiereEtudiant">Filière</label>
+                <input type="text" id="filiereEtudiant" required>
+              </div>
+              <div class="labelInput">
+                <label for="niveauEtudiant">Niveau</label>
+                <input type="text" id="niveauEtudiant" required>
+              </div>
+            </div> 
+             <div class="deux">
+              <div class="labelInput">
+                <label for="objetEtudiant">Objet</label>
+                <input type="text" id="objetEtudiant" required>
+              </div>
+              <div class="labelInput">
+                <label for="ecEtudiant">EC concernés</label>
+                <input type="text" id="ecEtudiant" required>
+              </div>
+            </div> 
+            <input type="submit" value="ENVOYER" class="envoyer">
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright © 2O22 Université de Thiès <span style="font-weight:bold; cursor: pointer; " >Designed By ALIOUNE</span></p>
+    </footer>
+    <script src="../JS/index.js"></script>
+  </body>
+</html>

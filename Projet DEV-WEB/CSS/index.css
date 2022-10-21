@@ -1,0 +1,823 @@
+*,
+::before,
+::after {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: sans-serif;
+}
+
+/*Début header*/
+
+header {
+  position: fixed;
+  width: 100vw;
+  height: 22vh;
+  z-index: 1000;
+  transition: background-color ease-out 0.9s;
+  overflow: hidden;
+}
+header:hover {
+  background-color: black;
+}
+header.sticky {
+  background-color: black;
+}
+
+/*
+.logo h1 {
+  font-size: 17px;
+}
+.logo h2 {
+  width: 14vw;
+  text-align: center;
+  margin-left: 2vw;
+}
+.logo {
+  margin: 7vh 5vw;
+}
+#titre {
+  font-size: 17px;
+}
+*/
+.logo {
+  width: 15%;
+  display: flex;
+  margin-top: 7vh;
+  margin-left: -1vw;
+  cursor: pointer;
+}
+.logo h1 {
+  margin-left: -4.6vw;
+  margin-top: 2vh;
+  font-size: 14px;
+}
+#universite {
+  font-weight: bold;
+  color: white;
+}
+.navbar {
+  width: 100%;
+  color: white;
+  font-weight: bold;
+}
+.onglets {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: -16vh 18vw;
+  width: 78%;
+  border-bottom: 2px solid white;
+}
+.reseaux,
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.navigation {
+  margin-top: 6vh;
+  padding-bottom: 1.3%;
+}
+.sociaux,
+.pages {
+  display: flex;
+  flex-wrap: wrap;
+}
+.pages {
+  margin-left: -5vh;
+}
+.pages li {
+  font-size: 2.8vh;
+}
+.sociaux li,
+.pages li {
+  list-style-type: none;
+  margin-left: 5vh;
+}
+
+/* Fin header*/
+
+main {
+  width: 100%;
+}
+
+/* Début Section Vidéo*/
+
+.video {
+  position: relative;
+  height: 105vh;
+  width: 100%;
+}
+video {
+  position: relative;
+  object-fit: cover;
+  height: 105vh;
+  width: 100%;
+}
+.ecriture {
+  position: absolute;
+  top: 40vh;
+  left: 7vw;
+}
+#bienvenue {
+  display: block;
+  font-size: 80px;
+  color: white;
+}
+#ut {
+  margin-left: 10vw;
+  display: block;
+  font-size: 80px;
+  color: white;
+  margin-top: 2vh;
+}
+.ecriture p {
+  margin-left: 10.5vw;
+  margin-top: 10vh;
+  display: inline-block;
+  color: white;
+  opacity: 0.9;
+  font-size: 30px;
+}
+.voirVideo {
+  position: absolute;
+  top: 34vh;
+  right: 9vw;
+  background-color: blue;
+  height: 20vh;
+  width: 10vw;
+  text-align: center;
+  border-radius: 300px;
+  padding-top: 9vh;
+  color: white;
+  cursor: pointer;
+}
+.button {
+  position: absolute;
+  top: 80vh;
+  right: 4vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  z-index: 100;
+}
+.button1 {
+  background-color: rgb(163, 71, 71);
+  height: 9vh;
+  width: 12vw;
+  text-align: center;
+  border-radius: 30px;
+  color: white;
+  padding-top: 3vh;
+  cursor: pointer;
+}
+.button2 {
+  background-color: rgb(226, 162, 42);
+  height: 9vh;
+  width: 12vw;
+  text-align: center;
+  border-radius: 30px;
+  color: white;
+  margin-top: 1.5vh;
+  padding-top: 3vh;
+  cursor: pointer;
+}
+
+/* Fin Section Vidéo*/
+
+/* Début Section Inscription*/
+
+.inscriptions {
+  height: 169.3vh;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  background-color: rgb(44, 140, 179);
+}
+.inscriptions h1,
+.campus h1,
+.administration h1,
+.gestionDesCours h1,
+.gestionDesNotes h1 {
+  font-size: 47px;
+  letter-spacing: 0.3vw;
+  padding-top: 6vh;
+}
+.inscriptions p {
+  font-size: 20px;
+  margin-top: 4vh;
+}
+.container {
+  position: absolute;
+  margin-top: 3%;
+  left: 10%;
+  height: 140vh;
+  width: 80%;
+  background-color: white;
+  overflow: hidden;
+}
+.container-onglets {
+  display: flex;
+  height: 5.5%;
+}
+.ongletsPrime {
+  width: 40vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.ongletsPrime:not(:nth-child(3)) {
+  border-right: 1px solid white;
+}
+.contenu {
+  position: absolute;
+  width: 100%;
+  height: 91%;
+  opacity: 0;
+}
+.contenu h2 {
+  margin-top: 2%;
+  color: rgb(44, 140, 179);
+}
+.contenu .pcarte {
+  margin-top: 2%;
+  color: orange;
+}
+.contenu .pcertificat {
+  margin-top: 2%;
+  color: blue;
+}
+/*
+.contenu h3,
+.contenu p {
+  padding: 20px;
+  color: rgb(44, 140, 179);
+  /*background-color: yellow;
+}
+.active {
+  transition: all 0.3 ease;
+}
+*/
+.activeContenu {
+  animation: fade 0.5 forwards;
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+    z-index: 0;
+  }
+  to {
+    opacity: 1;
+    z-index: 1;
+  }
+}
+
+#form {
+  color: white;
+  background-color: red;
+}
+#carte {
+  color: white;
+  background-color: orange;
+}
+#certificat {
+  color: white;
+  background-color: blue;
+}
+
+#form:hover {
+  border-top: 6px solid red;
+  background-color: white;
+  color: red;
+}
+
+#carte:hover {
+  border-top: 6px solid orange;
+  background-color: white;
+  color: orange;
+}
+
+#certificat:hover {
+  border-top: 6px solid blue;
+  background-color: white;
+  color: blue;
+}
+/*
+.form,
+.carte,
+.certificat {
+  width: 30vw;
+  height: 7vh;
+  text-align: center;
+}
+.form p,
+.carte p,
+.certificat p {
+  margin-top: 0.7vh;
+  font-weight: bold;
+  font-size: 25px;
+}
+.contenuForm {
+  height: 10vh;
+  width: 91%;
+  margin-left: 4.5%;
+  background-color: yellow;
+}
+.contenuCarte {
+  height: 10vh;
+  width: 91%;
+  margin-left: 4.5%;
+  background-color: maroon;
+}
+.contenuCertificat {
+  height: 10vh;
+  width: 91%;
+  margin-left: 4.5%;
+  background-color: gray;
+}*/
+.Infospersonnelles {
+  position: absolute;
+  height: 150vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1%;
+}
+.Infospersonnelles h3,
+.Infospédagogiques h3 {
+  text-align: justify;
+  color: rgb(44, 140, 179);
+}
+.Infospersonnelles h3 #informations,
+.Infospédagogiques h3 #informationsp {
+  border-bottom: 4px solid red;
+}
+.Infospersonnellesin {
+  display: flex;
+  justify-content: space-around;
+  width: 93%;
+  height: 7%;
+  margin-left: 7%;
+  margin-top: 2%;
+}
+.infremplissage,
+.infremplissagep {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  justify-content: space-evenly;
+  width: 30%;
+  height: 100%;
+}
+.infremplissage input {
+  width: 80%;
+  height: 60%;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid rgb(44, 140, 179);
+  box-shadow: 2px 2px 2px rgb(44, 140, 179);
+  font-size: 14px;
+  font-weight: bold;
+}
+.infremplissage label,
+.infremplissagep label {
+  color: red;
+  opacity: 0.9;
+}
+.Infospédagogiques {
+  margin-top: 4%;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+}
+.infremplissagep input {
+  width: 80%;
+  height: 65%;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid rgb(44, 140, 179);
+  box-shadow: 2px 2px 2px rgb(44, 140, 179);
+  font-size: 14px;
+  font-weight: bold;
+}
+.Infospédagogiquesin {
+  display: flex;
+  justify-content: space-around;
+  width: 93%;
+  height: 50%;
+  margin-left: 7%;
+  margin-top: 2%;
+}
+.photo {
+  padding: 5px;
+}
+.send {
+  margin-top: 6%;
+  height: 5%;
+  width: 20%;
+  margin-left: 41%;
+  outline: none;
+  border-radius: 25px;
+  border: 2px solid rgb(44, 140, 179);
+  box-shadow: 2px 2px 2px rgb(44, 140, 179);
+  font-size: 24px;
+  font-weight: bold;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+
+/* Début Section Campus*/
+
+.campus {
+  height: 238vh;
+  width: 100%;
+  color: white;
+  font-weight: bold;
+  background-color: rgba(44, 140, 179, 0.8);
+}
+.campus h1 {
+  text-align: center;
+}
+.cadre {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  margin-top: 3%;
+}
+.photos,
+.images {
+  width: 22%;
+  /*border: 2px solid yellow;*/
+  display: flex;
+  flex-direction: column;
+  padding: 0%;
+}
+.photos img,
+.images img {
+  object-fit: cover;
+  width: 100%;
+}
+.informationscampus {
+  width: 56%;
+  /*border: 2px solid black;*/
+  background-color: white;
+  color: rgba(44, 140, 179, 0.8);
+}
+.informationscampus .hb {
+  background-color: red;
+  border-top-right-radius: 999px;
+  border-bottom-right-radius: 999px;
+  color: white;
+  margin-top: 3vh;
+  width: 50%;
+  text-align: center;
+}
+.informationscampus .res {
+  background-color: orange;
+  border-top-left-radius: 999px;
+  border-bottom-left-radius: 999px;
+  float: right;
+  color: white;
+  margin-top: 2vh;
+  width: 50%;
+  text-align: center;
+}
+.informationscampus .sp {
+  background-color: blue;
+  border-top-right-radius: 999px;
+  border-bottom-right-radius: 999px;
+  color: white;
+  margin-top: 3vh;
+  width: 50%;
+  text-align: center;
+}
+.informationscampus .ac {
+  background-color: green;
+  border-top-left-radius: 999px;
+  border-bottom-left-radius: 999px;
+  float: right;
+  color: white;
+  margin-top: 2vh;
+  width: 50%;
+  text-align: center;
+}
+.paragraphe {
+  width: 90%;
+  margin-left: 7%;
+  margin-top: 2%;
+}
+.paragraphes {
+  width: 90%;
+  margin-left: 7%;
+  margin-top: 8%;
+}
+.para {
+  width: 90%;
+  margin-left: 7%;
+  margin-top: 2%;
+}
+.paras {
+  width: 90%;
+  margin-left: 7%;
+  margin-top: 8%;
+}
+.paragraphe p,
+.paragraphes p,
+.para p,
+.paras p {
+  color: rgb(44, 140, 179);
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+}
+#site {
+  color: red;
+}
+.jours p {
+  color: orange;
+}
+
+/* Fin Section Campus*/
+
+.administration {
+  height: 130vh;
+  width: 100%;
+  color: white;
+  font-weight: bold;
+  background-color: rgb(44, 140, 179);
+}
+.administration h1 {
+  text-align: center;
+}
+.administrations {
+  position: absolute;
+  width: 100%;
+  margin-top: 3%;
+  background-image: url("../images/registre.jpg");
+}
+.imageadministration,
+.photoadministration {
+  width: 100%;
+  display: flex;
+}
+.ecritureadministration {
+  color: rgb(44, 140, 179);
+  /* background-color: white;*/
+  margin-left: 7%;
+  width: 86%;
+  height: 109vh;
+  display: flex;
+  justify-content: space-around;
+}
+.adin {
+  display: flex;
+  justify-content: space-evenly;
+  /* border: 2px solid yellow;*/
+  width: 100%;
+  margin-top: 5%;
+}
+.adremplissage {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  /*border: 2px solid red;*/
+}
+.adremplissage input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgb(44, 140, 179);
+  box-shadow: 0px 2px 2px rgb(44, 140, 179);
+  width: 100%;
+  margin-top: 2%;
+  font-weight: bold;
+  font-size: 15px;
+  background-color: transparent;
+  color: white;
+}
+.ad {
+  /* border: 2px solid black; */
+  width: 50%;
+}
+.demandetexte {
+  margin-top: 5%;
+}
+.demandetexte textarea {
+  outline: none;
+  border: none;
+  margin-left: 4%;
+  border-left: 1px solid rgb(44, 140, 179);
+  border-bottom: 1px solid rgb(44, 140, 179);
+  font-size: 15px;
+  font-weight: bold;
+  background-color: transparent;
+  color: white;
+}
+.Envoyer {
+  margin-top: 6%;
+  height: 5%;
+  width: 20%;
+  margin-left: 41%;
+  outline: none;
+  border-radius: 25px;
+  border: 2px solid rgb(44, 140, 179);
+  box-shadow: 2px 2px 2px white;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: rgb(44, 140, 179);
+  color: white;
+  cursor: pointer;
+}
+.texteacote {
+  margin-top: 15%;
+}
+.texteacote h2 {
+  font-size: 60px;
+}
+
+/* Début Section gestionDesCours*/
+
+.gestionDesCours {
+  height: 300vh;
+  width: 100%;
+  color: white;
+  font-weight: bold;
+  background-color: rgba(44, 140, 179, 0.8);
+}
+.gestionDesCours h1 {
+  text-align: center;
+}
+.gestion {
+  background-color: white;
+  margin-left: 7%;
+  width: 86%;
+  height: 92.85%;
+  margin-top: 3%;
+  padding-top: 35%;
+  color: rgb(44, 140, 179);
+  display: flex;
+  flex-direction: column;
+}
+.imagesDomaine {
+  height: 20%;
+  position: relative;
+  top: -90%;
+  background-image: url("../images/l.jpg");
+  object-fit: cover;
+  background-size: cover;
+  /* animation: anim 9 infinite linear normal;*/
+}
+/*@keyframes anim {
+  0% {
+    background-image: url("../images/maths.webp");
+  }
+  33% {
+    background-image: url("../images/informatique.jpg");
+  }
+  66% {
+    background-image: url("../images/physique.jpg");
+  }
+  100% {
+    background-image: url("../images/eau.jpg");
+  }
+}
+*/
+.gestion li {
+  list-style-type: square;
+}
+.gestion li a {
+  text-decoration: none;
+  color: rgb(44, 140, 179);
+}
+.licencemaster {
+  display: flex;
+  justify-content: space-around;
+}
+.dutdoctorat {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: -10%;
+  margin-top: 7%;
+}
+.licence ul,
+.dutdoctorat ul {
+  margin-top: 7%;
+}
+.licence li {
+  margin-top: 4%;
+  color: red;
+}
+.dut li {
+  margin-top: 4%;
+  color: green;
+}
+.doctorat li {
+  margin-top: 4%;
+  color: blue;
+}
+.master ul {
+  margin-top: 3%;
+}
+.master li {
+  margin-top: 4%;
+  color: orange;
+}
+
+/* Fin Section gestionDesCours*/
+
+/* Début Section gestioDesNotes*/
+
+.gestionDesNotes {
+  height: 121vh;
+  color: white;
+  font-weight: bold;
+  background-color: rgb(44, 140, 179);
+}
+.gestionDesNotes h1 {
+  text-align: center;
+}
+.enveloppe {
+  width: 100%;
+  height: 100vh;
+  margin-top: 3%;
+  color: rgb(44, 140, 179);
+  background-image: url("../images/BD3.jpg");
+  object-fit: cover;
+  background-size: cover;
+  text-align: center;
+}
+.enveloppe p {
+  font-size: 25px;
+  padding-top: 10vh;
+}
+.bgroundform {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  height: 70vh;
+  width: 40vw;
+  margin: 0 auto;
+  margin-top: 4%;
+  padding-top: 1vh;
+}
+.deux {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 4vh;
+}
+.labelInput {
+  display: flex;
+  flex-direction: column;
+}
+.labelInput label {
+  text-align: justify;
+  font-weight: bold;
+  color: white;
+  opacity: 0.9;
+}
+.labelInput input {
+  width: 16vw;
+  height: 4vh;
+  background-color: inherit;
+  color: white;
+  outline: none;
+  border-color: rgb(44, 140, 179);
+  border-radius: 999px;
+  margin-top: 1vh;
+  font-size: 15px;
+  font-weight: bold;
+  filter: drop-shadow(2px 2px 2px rgb(44, 140, 179));
+}
+.envoyer {
+  margin-top: 9vh;
+  height: 5vh;
+  width: 10vw;
+  outline: none;
+  border-radius: 999px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  opacity: 0.9;
+  background-color: inherit;
+  border-color: rgb(44, 140, 179);
+  filter: drop-shadow(2px 2px 2px rgb(44, 140, 179));
+}
+
+/* Fin Section gestionDesNotes*/
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  height: 10vh;
+  padding: 20px;
+}
